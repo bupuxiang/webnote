@@ -2,6 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 ReactDOM.render(
-    <h1>hello, world! </h1>,
+    <h1>{(new Date()).toString()} </h1>,
     document.getElementById("root")
 );
