@@ -1,17 +1,7 @@
-import _ from "lodash";
-import "./index.css";
-import Icon from "./icon.svg";
+import React from "react";
+import ReactDOM from "react-dom";
 
-function component() {
-    var element = document.createElement("div");
-    element.innerHTML = _.join(["Hello", "webpack"], " ");
-    element.classList.add("hello")
-
-    var myIcon = new Image();
-    myIcon.src = Icon;
-    element.appendChild(myIcon);
-    
-    return element;
-}
-
-document.body.appendChild(component());
+ReactDOM.render(
+    <h1>hello, world! </h1>,
+    document.getElementById("root")
+);
